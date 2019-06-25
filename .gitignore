@@ -1,2 +1,17 @@
 
 .idea/workspace.xml
+.idea/workspace.xml
+bin/net/Nexgan/AdvancedReporter/Main.class
+bin/net/Nexgan/AdvancedReporter/MySQL.class
+bin/net/Nexgan/AdvancedReporter/PlayerData.class
+bin/net/Nexgan/AdvancedReporter/PlayerDataManager.class
+bin/net/Nexgan/AdvancedReporter/ReportsManager.class
+bin/net/Nexgan/AdvancedReporter/ReportTicket.class
+bin/net/Nexgan/AdvancedReporter/Section.class
+bin/net/Nexgan/AdvancedReporter/SectionsManager.class
+bin/net/Nexgan/AdvancedReporter/SettingsManager.class
+bin/net/Nexgan/AdvancedReporter/SubSection.class
+bin/reports.yml
+.idea/workspace.xml
+.idea/workspace.xml
+.idea/workspace.xml
