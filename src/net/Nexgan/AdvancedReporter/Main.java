@@ -5,7 +5,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
 	
 	private static Main plugin = null;
-	
+
+
+    /**
+     * Automatically called upon server startup
+     */
 	public void onEnable() {
 		plugin = this;
 		
@@ -17,6 +21,7 @@ public class Main extends JavaPlugin {
 		
 		MySQL mysql = MySQL.getMySQL();
 		mysql.setup();
+
 	}
 	
 	public static Main getPlugin() {

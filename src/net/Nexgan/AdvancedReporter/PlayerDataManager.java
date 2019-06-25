@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class PlayerDataManager {
 	
 	private static PlayerDataManager instance;
-	
-	private static ArrayList<PlayerData> playerDatas = new ArrayList<PlayerData>();
+
+	private static ArrayList<PlayerData> playerDatas = new ArrayList<>();
 	
 	public static PlayerDataManager getInstance() {
 		if(instance == null)

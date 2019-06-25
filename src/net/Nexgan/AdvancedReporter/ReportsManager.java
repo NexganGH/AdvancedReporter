@@ -19,7 +19,10 @@ public class ReportsManager {
 			instance = new ReportsManager();
 		return instance;
 	}
-	
+
+	/**
+	 * Loads every report from MySQL database of flat files (reports.yml).
+	 */
 	public void setup() {
 		MySQL mysql = MySQL.getMySQL();
 		reports.clear();

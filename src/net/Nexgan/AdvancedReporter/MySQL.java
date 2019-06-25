@@ -8,6 +8,9 @@ import java.sql.Statement;
 
 import org.bukkit.Bukkit;
 
+/**
+ * Manages MySQL connections.
+ */
 public class MySQL {
 
 	private static MySQL instance = null;
@@ -22,6 +25,8 @@ public class MySQL {
 
 	Connection connection = null;
 
+	/** Tries to estabilish a connection with MySQL, given all the necessary fields. Checks the table, given the name, exists. If not, creates it.
+	 */
 	public void setup() {
 		if (!enabled)
 			return;
@@ -36,7 +41,7 @@ public class MySQL {
 			if (!tableRs.next()) {
 				Bukkit.getLogger().info("AdvancedReporter MySQL > Table '" + reportTable
 						+ "' doesn't exist. A new one will be created.");
-				
+
 				statement.executeUpdate("CREATE TABLE " + reportTable + "  ("
 						+ "id INT AUTO_INCREMENT, "
 						+ "reporter VARCHAR(25) NOT NULL, "
@@ -52,7 +57,7 @@ public class MySQL {
 						+ "PRIMARY KEY (id)"
 						+ ") ENGINE=INNODB;");
 			}
-			
+
 			statement.close();
 		} catch (SQLException e) {
 			Bukkit.getLogger().warning("AdvancedReporter MySQL > Error while trying to connect to MySQL database.");
@@ -67,8 +72,18 @@ public class MySQL {
 		return instance;
 	}
 
+	/** Sets MySQL fields.
+	 *
+	 * @param enabled If MySQL storage system is enabled or not.
+	 * @param host Host address.
+	 * @param port Port.
+	 * @param database Database where everything will be stored name.
+	 * @param username Username the plugin will use to perform MySQL actions.
+	 * @param password Password of the above user.
+	 * @param reportTable Where reports will be stored.
+	 */
 	public void setMySQL(boolean enabled, String host, int port, String database, String username, String password,
-			String reportTable) {
+						 String reportTable) {
 		this.enabled = enabled;
 		this.host = host;
 		this.port = port;
@@ -77,15 +92,15 @@ public class MySQL {
 		this.password = password;
 		this.reportTable = reportTable;
 	}
-	
+
 	public boolean isEnabled() {
 		return enabled;
 	}
-	
+
 	public Connection getConnection() {
 		return connection;
 	}
-	
+
 	public String getReportTableName() {
 		return reportTable;
 	}

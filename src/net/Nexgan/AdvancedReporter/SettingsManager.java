@@ -54,7 +54,13 @@ public class SettingsManager {
 		
 		save();
 	}
-	
+
+	/**
+	 * Get the file from plugin's folder or create it.
+	 *
+	 * @param fileName
+	 * @return File whose name was given.
+	 */
 	public File getFile(String fileName) {
 		Plugin plugin = Main.getPlugin();
 		File file = new File(plugin.getDataFolder(), fileName);
@@ -64,7 +70,9 @@ public class SettingsManager {
 		}
 		return file;
 	}
-	
+
+	/** Save every configuration in its proper file.
+	 */
 	public void save() {
 		try {
 			mysqlConf.save(mysqlFile);
@@ -76,7 +84,9 @@ public class SettingsManager {
 			e.printStackTrace();
 		}
 	}
-	
+
+	/** Loads MySQL fields from mysql.yml file and sets them in MySQL class.
+	 */
 	public void loadMySQLFields() {
 		MySQL mysql = MySQL.getMySQL();
 		boolean enabled = mysqlConf.getBoolean("enabled");
