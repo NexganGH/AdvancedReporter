@@ -11,6 +11,8 @@ public class Section {
 
 	private String name;
 	private ItemStack itemStack;
+
+
 	private ArrayList<SubSection> subSections = new ArrayList<SubSection>();
 
 	public Section(String name, ItemStack itemStack, ArrayList<SubSection> subSections) {
@@ -23,4 +25,7 @@ public class Section {
 		return name;
 	}
 
+	public ArrayList<SubSection> getSubSections() {
+		return subSections;
+	}
 }

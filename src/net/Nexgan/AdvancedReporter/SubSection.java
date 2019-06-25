@@ -12,4 +12,7 @@ public class SubSection {
 		this.itemStack = itemStack;
 	}
 
+	public String getName() {
+		return name;
+	}
 }

@@ -30,7 +30,7 @@ public class SectionsManager {
 			String path = "sections-list." + name;
 			
 			ItemStack item = sectionsConf.getItemStack(path + ".item");
-			ArrayList<SubSection> subSections = new ArrayList<SubSection>();
+			ArrayList<SubSection> subSections = new ArrayList<>();
 			
 			for(String subName : sectionsConf.getConfigurationSection(path + ".sub-sections").getKeys(false)) {
 				ItemStack subItem = sectionsConf.getItemStack(path + ".sub-sections." + subName + ".item");
@@ -47,5 +47,14 @@ public class SectionsManager {
 				return section;
 		return null;
 	}
+
+	public SubSection getSubSectionByName(String name) {
+		for (Section section : sections)
+			for (SubSection subSection : section.getSubSections())
+				if (subSection.getName().equalsIgnoreCase(name))
+					return subSection;
+		return null;
+	}
+
 
 }
