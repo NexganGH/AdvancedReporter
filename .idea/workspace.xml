@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8324051b-fa7a-4f05-8ca1-d3f21d26d5b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="8324051b-fa7a-4f05-8ca1-d3f21d26d5b5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-303">
-              <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nico Tortorici &lt;tortoricinico@outlook.it&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -58,11 +26,17 @@
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Section.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java" />
-        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-1686" />
+    <option name="y" value="147" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -96,7 +70,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561491434843" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561491836709" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RunDashboard">
@@ -122,30 +96,30 @@
       <option name="presentableId" value="Default" />
       <updated>1561489948973</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added existance.">
-      <created>1561490195834</created>
+    <task id="LOCAL-00001" summary="Added comments and fixed small warnings">
+      <created>1561491475572</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1561490195834</updated>
+      <updated>1561491475572</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1880" y="259" width="1400" height="1000" extended-state="0" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3380597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5005513" side_tool="true" visible="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.49944875" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50074625" side_tool="true" visible="true" weight="0.3656286" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49925372" visible="true" weight="0.3656286" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -166,7 +140,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added existance." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added existance." />
+    <MESSAGE value="Added comments and fixed small warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments and fixed small warnings" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java">
@@ -213,36 +189,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mysql.yml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -261,9 +209,43 @@
     <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-303">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reports.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
