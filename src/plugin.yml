@@ -1,0 +1,6 @@
+name: AdvancedReporter
+author: Nexgan
+version: 1.0
+main: net.Nexgan.AdvancedReporter.Main
+api-version: 1.14
+commands:

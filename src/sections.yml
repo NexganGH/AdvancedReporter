@@ -1,0 +1,40 @@
+sections-list:
+  hacks:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 1963
+      type: BARRIER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        type: 
+        display-name: '&cHacks'
+        lore:
+        - '&7Click here to report'
+        - '&7the cheater'
+    sub-sections:
+      killaura:
+        item:
+          ==: org.bukkit.Inventory.ItemStack
+          v: 1963
+          type: ENDER_PEARL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            lore:
+            - '&7Click here to report the'
+            - 'killaura cheater'
+  offensive-language:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 1963
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        type: 
+        display-name: '&2Offensive language'
+        lore:
+        - '&7Click here to report'
+        - '&7an insulting person'
+    sub-sections: {}
