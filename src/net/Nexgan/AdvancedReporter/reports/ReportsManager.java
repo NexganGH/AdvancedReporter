@@ -149,8 +149,21 @@ public class ReportsManager {
             }
 
         } else {
-
+            FileConfiguration reportsConf = settingsManager.getReportsConf();
+            String path = "reports-list." + reportTicket.getId();
+            reportsConf.set(path + ".reporter", reportTicket.getReporter().getName());
+            reportsConf.set(path + ".reported", reportTicket.getReported().getName());
+            reportsConf.set(path + ".server-name", reportTicket.getServerName());
+            reportsConf.set(path + ".section", reportTicket.getSection().getName());
+            reportsConf.set(path + ".sub-section", subSection);
+            reportsConf.set(path + ".reason", reportTicket.getReason());
+            reportsConf.set(path + ".manager", manager);
+            reportsConf.set(path + ".pending", reportTicket.isPending());
+            reportsConf.set(path + ".accepted", reportTicket.isAccepted());
+            reportsConf.set(path + ".how-resolved", reportTicket.getHowResolved());
+            settingsManager.save();
         }
+        setup();
     }
 
 }
