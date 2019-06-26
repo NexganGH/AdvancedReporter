@@ -66,7 +66,7 @@ public class MySQL {
 
 	}
 
-	public static MySQL getMySQL() {
+    public static MySQL getInstance() {
 		if (instance == null)
 			instance = new MySQL();
 		return instance;

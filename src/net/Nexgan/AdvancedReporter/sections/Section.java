@@ -1,4 +1,4 @@
-package net.Nexgan.AdvancedReporter;
+package net.Nexgan.AdvancedReporter.sections;
 
 import java.util.ArrayList;
 

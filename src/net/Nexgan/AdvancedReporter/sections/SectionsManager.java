@@ -1,7 +1,8 @@
-package net.Nexgan.AdvancedReporter;
+package net.Nexgan.AdvancedReporter.sections;
 
 import java.util.ArrayList;
 
+import net.Nexgan.AdvancedReporter.SettingsManager;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.inventory.ItemStack;
 
@@ -48,11 +49,10 @@ public class SectionsManager {
 		return null;
 	}
 
-	public SubSection getSubSectionByName(String name) {
-		for (Section section : sections)
-			for (SubSection subSection : section.getSubSections())
-				if (subSection.getName().equalsIgnoreCase(name))
-					return subSection;
+	public SubSection getSubSectionByName(Section section, String name) {
+		for (SubSection subSection : section.getSubSections())
+			if (subSection.getName().equalsIgnoreCase(name))
+				return subSection;
 		return null;
 	}
 

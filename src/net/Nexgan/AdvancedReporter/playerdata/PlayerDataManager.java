@@ -1,4 +1,4 @@
-package net.Nexgan.AdvancedReporter;
+package net.Nexgan.AdvancedReporter.playerdata;
 
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
@@ -34,7 +34,7 @@ public class PlayerDataManager {
 	}
 
 	public PlayerData createNewPlayerData(String name) {
-        if (name == null || name.equalsIgnoreCase("none"))
+		if (name == null || name.equalsIgnoreCase("none") || name.equalsIgnoreCase("null"))
             return null;
 		Player player = Bukkit.getPlayer(name);
 		boolean online = false;

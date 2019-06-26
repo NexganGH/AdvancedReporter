@@ -88,7 +88,7 @@ public class SettingsManager {
 	/** Loads MySQL fields from mysql.yml file and sets them in MySQL class.
 	 */
 	public void loadMySQLFields() {
-		MySQL mysql = MySQL.getMySQL();
+        MySQL mysql = MySQL.getInstance();
 		boolean enabled = mysqlConf.getBoolean("enabled");
 		String host = mysqlConf.getString("host");
 		int port = mysqlConf.getInt("port");

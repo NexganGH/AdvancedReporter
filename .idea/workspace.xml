@@ -7,14 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8324051b-fa7a-4f05-8ca1-d3f21d26d5b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdvancedReporter Reworked.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdvancedReporter Reworked.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/playerdata/PlayerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/playerdata/PlayerDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/reports/ReportTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/reports/ReportsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/SectionsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SubSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/SubSection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,87 +28,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reports.yml">
+        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/SectionsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java">
+        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/Section.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
-              <folding>
-                <element signature="e#2926#2927#0" expanded="true" />
-                <element signature="e#2951#2952#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java">
+        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/reports/ReportsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+            <state relative-caret-position="388">
+              <caret line="131" column="131" selection-start-line="131" selection-start-column="131" selection-end-line="131" selection-end-column="131" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-              <folding>
-                <element signature="e#985#986#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,18 +72,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Section.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SubSection.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerData.java" />
         <option value="$PROJECT_DIR$/src/reports.yml" />
         <option value="$PROJECT_DIR$/src/sections.yml" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java" />
-        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java" />
-        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SettingsManager.java" />
         <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/reports/ReportTicket.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/playerdata/PlayerData.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/playerdata/PlayerDataManager.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/SectionsManager.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java" />
+        <option value="$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/reports/ReportsManager.java" />
       </list>
     </option>
   </component>
@@ -149,6 +103,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,18 +125,30 @@
             </path>
             <path>
               <item name="AdvancedReporter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdvancedReporter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AdvancedReporter" type="462c0819:PsiDirectoryNode" />
+              <item name="reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdvancedReporter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdvancedReporter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AdvancedReporter" type="462c0819:PsiDirectoryNode" />
+              <item name="sections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdvancedReporter" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561558855130" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561561615373" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reports.yml" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -224,14 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1561500582904</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Reports setup completed (MySQL or flat file), added getters and setters, setup method in onEnable(), bugfixes, some improvements.">
+      <created>1561558967231</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561558967231</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25523704" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -293,7 +268,8 @@
     <MESSAGE value="Added existance." />
     <MESSAGE value="Added comments and fixed small warnings" />
     <MESSAGE value="ReportsManager setup completed, search PlayerData functions, create new PlayerData functions, changed PlayerData fields, new getters." />
-    <option name="LAST_COMMIT_MESSAGE" value="ReportsManager setup completed, search PlayerData functions, create new PlayerData functions, changed PlayerData fields, new getters." />
+    <MESSAGE value="Reports setup completed (MySQL or flat file), added getters and setters, setup method in onEnable(), bugfixes, some improvements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reports setup completed (MySQL or flat file), added getters and setters, setup method in onEnable(), bugfixes, some improvements." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -310,89 +286,13 @@
     <entry file="file://$PROJECT_DIR$/src/plugin.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/sections.yml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Section.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sections.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SubSection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="e#312#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportTicket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="e#985#986#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/PlayerDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reports.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/SectionsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -407,10 +307,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/ReportsManager.java">
+    <entry file="file://$PROJECT_DIR$/src/reports.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+        <state relative-caret-position="136">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/SubSection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/reports/ReportTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+            <element signature="e#1438#1439#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1674#1675#0" expanded="true" />
+            <element signature="e#1709#1710#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/playerdata/PlayerDataManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="36" column="88" selection-start-line="36" selection-start-column="88" selection-end-line="36" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/MySQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/playerdata/PlayerData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#528#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/Section.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/sections/SectionsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Nexgan/AdvancedReporter/reports/ReportsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="131" column="131" selection-start-line="131" selection-start-column="131" selection-end-line="131" selection-end-column="131" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

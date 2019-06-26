@@ -1,4 +1,4 @@
-package net.Nexgan.AdvancedReporter;
+package net.Nexgan.AdvancedReporter.reports;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -6,6 +6,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import net.Nexgan.AdvancedReporter.*;
+import net.Nexgan.AdvancedReporter.playerdata.PlayerData;
+import net.Nexgan.AdvancedReporter.playerdata.PlayerDataManager;
+import net.Nexgan.AdvancedReporter.sections.Section;
+import net.Nexgan.AdvancedReporter.sections.SectionsManager;
+import net.Nexgan.AdvancedReporter.sections.SubSection;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 
@@ -25,7 +31,7 @@ public class ReportsManager {
      * Loads every report from MySQL database or flat files (reports.yml).
      */
     public void setup() {
-        MySQL mysql = MySQL.getMySQL();
+        MySQL mysql = MySQL.getInstance();
         reports.clear();
 
         PlayerDataManager paManager = PlayerDataManager.getInstance();
@@ -56,7 +62,7 @@ public class ReportsManager {
 
                     String subSectionName = rs.getString("subSection");
                     //TODO Check existence of subSection name and give proper warning
-                    SubSection subSection = sectionsManager.getSubSectionByName(subSectionName);
+                    SubSection subSection = sectionsManager.getSubSectionByName(section, subSectionName);
 
                     String reason = rs.getString("reason");
 
@@ -71,9 +77,9 @@ public class ReportsManager {
                     reports.add(reportTicket);
                 }
                 statement.close();
-            } catch (SQLException e) {
+            } catch (SQLException SQLException) {
                 Bukkit.getServer().getLogger().warning("AdvancedReporter ERROR > Error while trying to get reports from MySQL.");
-                e.printStackTrace();
+                SQLException.printStackTrace();
             }
 
         } else {
@@ -89,7 +95,7 @@ public class ReportsManager {
                 Section section = sectionsManager.getSectionByName(sectionName);
 
                 String subSectionName = reportsConf.getString(path + ".sub-section");
-                SubSection subSection = sectionsManager.getSubSectionByName(subSectionName);
+                SubSection subSection = sectionsManager.getSubSectionByName(section, subSectionName);
 
                 String reason = reportsConf.getString(path + ".reason");
 
@@ -104,4 +110,47 @@ public class ReportsManager {
         }
 
     }
+
+    /**
+     * Saves a report in MySQL database or in flat file (reports.yml).
+     */
+    public void saveReport(ReportTicket reportTicket) {
+        SettingsManager settingsManager = SettingsManager.getInstance();
+        MySQL mysql = MySQL.getInstance();
+        String subSection = null;
+        String manager = null;
+        if (reportTicket.getSubSection() != null)
+            subSection = reportTicket.getSubSection().getName();
+        if (reportTicket.getManager() != null)
+            manager = reportTicket.getManager().getName();
+        if (mysql.isEnabled()) {
+            try {
+                Statement statement = mysql.getConnection().createStatement();
+                ResultSet rs = statement.executeQuery("SELECT * FROM `" + mysql.getReportTableName() + "` WHERE `id` = " + reportTicket
+                        .getId() + ";");
+                if (rs.next())
+                    statement.executeUpdate("DELETE FROM `" + mysql.getReportTableName() + "` WHERE `id` = " + reportTicket.getId() + ";");
+                statement.executeUpdate("INSERT INTO `" + mysql.getReportTableName() + "` VALUES (" +
+                        reportTicket.getId() + ", '" +
+                        reportTicket.getReporter().getName() + "', '" +
+                        reportTicket.getReported().getName() + "', '" +
+                        reportTicket.getServerName() + "', '" +
+                        reportTicket.getSection().getName() + "', '" +
+                        subSection + "', '" +
+                        reportTicket.getReason() + "', '" +
+                        manager + "', " +
+                        reportTicket.isPending() + ", " +
+                        reportTicket.isAccepted() + ", '" +
+                        reportTicket.getHowResolved() + "')");
+                statement.close();
+            } catch (SQLException e) {
+                Bukkit.getLogger().warning("AdvancedReporter ERROR > Error while trying to save/update a record in MySQL database.");
+                e.printStackTrace();
+            }
+
+        } else {
+
+        }
+    }
+
 }

@@ -1,4 +1,4 @@
-package net.Nexgan.AdvancedReporter;
+package net.Nexgan.AdvancedReporter.playerdata;
 
 import org.bukkit.entity.Player;
 
@@ -14,6 +14,10 @@ public class PlayerData {
         this.player = player;
         this.online = online;
         hasEverJoinedServer = hasEverJoinedServer;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Player getPlayer() {
