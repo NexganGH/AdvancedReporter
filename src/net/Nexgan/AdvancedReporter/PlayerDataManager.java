@@ -34,6 +34,8 @@ public class PlayerDataManager {
 	}
 
 	public PlayerData createNewPlayerData(String name) {
+        if (name == null || name.equalsIgnoreCase("none"))
+            return null;
 		Player player = Bukkit.getPlayer(name);
 		boolean online = false;
 		boolean hasEverJoinedServer = false;

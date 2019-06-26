@@ -13,7 +13,7 @@ public class ReportsManager {
 
     private static ReportsManager instance;
 
-    private static ArrayList<ReportTicket> reports;
+    private static ArrayList<ReportTicket> reports = new ArrayList<>();
 
     public static ReportsManager getInstance() {
         if (instance == null)
@@ -22,7 +22,7 @@ public class ReportsManager {
     }
 
     /**
-     * Loads every report from MySQL database of flat files (reports.yml).
+     * Loads every report from MySQL database or flat files (reports.yml).
      */
     public void setup() {
         MySQL mysql = MySQL.getMySQL();
@@ -30,7 +30,8 @@ public class ReportsManager {
 
         PlayerDataManager paManager = PlayerDataManager.getInstance();
         SettingsManager settingsManager = SettingsManager.getInstance();
-        FileConfiguration config = settingsManager.getSectionsConf();
+        FileConfiguration sectionsConf = settingsManager.getSectionsConf();
+        FileConfiguration reportsConf = settingsManager.getReportsConf();
         SectionsManager sectionsManager = SectionsManager.getInstance();
 
         if (mysql.isEnabled()) {
@@ -40,7 +41,7 @@ public class ReportsManager {
             try {
                 Statement statement = connection.createStatement();
 
-                ResultSet rs = statement.executeQuery("SELECT * FROM '" + table + "'");
+                ResultSet rs = statement.executeQuery("SELECT * FROM `" + table + "`");
 
                 while (rs.next()) {
                     int id = rs.getInt("id");
@@ -76,27 +77,29 @@ public class ReportsManager {
             }
 
         } else {
-            for (String idString : config.getConfigurationSection("reports-list").getKeys(false)) {
+            for (String idString : reportsConf.getConfigurationSection("reports-list").getKeys(false)) {
                 //TODO Check if it is an Integer
                 int id = Integer.parseInt(idString);
                 String path = "reports-list." + idString;
-                PlayerData reporter = paManager.getPlayerDataByName(config.getString(path + ".reporter"));
-                PlayerData reported = paManager.getPlayerDataByName(config.getString(path + ".reported"));
-                String serverName = config.getString(path + ".server-name");
+                PlayerData reporter = paManager.getPlayerDataByName(reportsConf.getString(path + ".reporter"));
+                PlayerData reported = paManager.getPlayerDataByName(reportsConf.getString(path + ".reported"));
+                String serverName = reportsConf.getString(path + ".server-name");
 
-                String sectionName = config.getString(path + ".section");
+                String sectionName = reportsConf.getString(path + ".section");
                 Section section = sectionsManager.getSectionByName(sectionName);
 
-                String subSectionName = config.getString(path + ".sub-section");
+                String subSectionName = reportsConf.getString(path + ".sub-section");
                 SubSection subSection = sectionsManager.getSubSectionByName(subSectionName);
 
-                String reason = config.getString(path + ".reason");
+                String reason = reportsConf.getString(path + ".reason");
 
-                PlayerData manager = paManager.getPlayerDataByName(config.getString(path + ".manager"));
+                PlayerData manager = paManager.getPlayerDataByName(sectionsConf.getString(path + ".manager"));
 
-                boolean pending = config.getBoolean(path + ".pending");
-                boolean accepted = config.getBoolean(path + ".accepted");
-                boolean howREsolved = config.getBoolean(path + ".howResolved");
+                boolean pending = reportsConf.getBoolean(path + ".pending");
+                boolean accepted = reportsConf.getBoolean(path + ".accepted");
+                String howResolved = reportsConf.getString(path + ".howResolved");
+                ReportTicket reportTicket = new ReportTicket(id, reporter, reported, serverName, section, subSection, reason, manager, pending, accepted, howResolved);
+                reports.add(reportTicket);
             }
         }
 

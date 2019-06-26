@@ -30,4 +30,8 @@ public class ReportTicket {
 		this.accepted = accepted;
 		this.howResolved = howResolved;
 	}
+
+    public int getId() {
+        return id;
+    }
 }

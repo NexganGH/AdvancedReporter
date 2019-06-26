@@ -22,6 +22,9 @@ public class Main extends JavaPlugin {
 		MySQL mysql = MySQL.getMySQL();
 		mysql.setup();
 
+        ReportsManager reportsManager = ReportsManager.getInstance();
+        reportsManager.setup();
+
 	}
 	
 	public static Main getPlugin() {

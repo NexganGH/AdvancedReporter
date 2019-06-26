@@ -107,5 +107,8 @@ public class SettingsManager {
 	public String getServerName() {
 		return serverName;
 	}
-	
+
+    public FileConfiguration getReportsConf() {
+        return reportsConf;
+    }
 }
