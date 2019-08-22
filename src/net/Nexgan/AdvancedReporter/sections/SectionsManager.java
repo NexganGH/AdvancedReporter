@@ -3,6 +3,7 @@ package net.Nexgan.AdvancedReporter.sections;
 import java.util.ArrayList;
 
 import net.Nexgan.AdvancedReporter.SettingsManager;
+import net.Nexgan.NexganLib.utilities.MessageManager;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.inventory.ItemStack;
 
@@ -24,17 +25,21 @@ public class SectionsManager {
 	/** Loads every section from the section.yml file and adds them to "sections" arraylist.
 	 */
 	public void setup() {
-		FileConfiguration sectionsConf = SettingsManager.getInstance().getSectionsConf();
-
+		FileConfiguration sectionsConf = SettingsManager.getInstance().getConf("sections.yml");
+		MessageManager messageManager = MessageManager.getInstance();
 		
 		for(String name : sectionsConf.getConfigurationSection("sections-list").getKeys(false)) {
 			String path = "sections-list." + name;
 			
 			ItemStack item = sectionsConf.getItemStack(path + ".item");
+			item = messageManager.translateItemStack(item);
+
 			ArrayList<SubSection> subSections = new ArrayList<>();
 			
 			for(String subName : sectionsConf.getConfigurationSection(path + ".sub-sections").getKeys(false)) {
 				ItemStack subItem = sectionsConf.getItemStack(path + ".sub-sections." + subName + ".item");
+				subItem = messageManager.translateItemStack(subItem);
+
 				subSections.add(new SubSection(subName, subItem));
 			}
 			
@@ -56,5 +61,7 @@ public class SectionsManager {
 		return null;
 	}
 
-
+	public ArrayList<Section> getSections() {
+		return sections;
+	}
 }

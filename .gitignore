@@ -24,3 +24,13 @@ bin/config.yml
 .idea/workspace.xml
 .idea/workspace.xml
 .idea/workspace.xml
+*.xml
+.idea/workspace.xml
+bin/META-INF/AdvancedReporter Reworked.kotlin_module
+bin/net/Nexgan/AdvancedReporter/playerdata/PlayerData.class
+bin/net/Nexgan/AdvancedReporter/playerdata/PlayerDataManager.class
+bin/net/Nexgan/AdvancedReporter/reports/ReportsManager.class
+bin/net/Nexgan/AdvancedReporter/reports/ReportTicket.class
+bin/net/Nexgan/AdvancedReporter/sections/Section.class
+bin/net/Nexgan/AdvancedReporter/sections/SectionsManager.class
+bin/net/Nexgan/AdvancedReporter/sections/SubSection.class

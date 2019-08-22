@@ -28,4 +28,8 @@ public class Section {
 	public ArrayList<SubSection> getSubSections() {
 		return subSections;
 	}
+
+	public ItemStack getItemStack() {
+		return itemStack;
+	}
 }

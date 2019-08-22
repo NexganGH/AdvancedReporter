@@ -36,8 +36,8 @@ public class ReportsManager {
 
         PlayerDataManager paManager = PlayerDataManager.getInstance();
         SettingsManager settingsManager = SettingsManager.getInstance();
-        FileConfiguration sectionsConf = settingsManager.getSectionsConf();
-        FileConfiguration reportsConf = settingsManager.getReportsConf();
+        FileConfiguration sectionsConf = settingsManager.getConf("sections.yml");
+        FileConfiguration reportsConf = settingsManager.getConf("reports.yml");
         SectionsManager sectionsManager = SectionsManager.getInstance();
 
         if (mysql.isEnabled()) {
@@ -111,6 +111,10 @@ public class ReportsManager {
 
     }
 
+    public void createNewReport(PlayerData reporter, PlayerData reported, Section section, SubSection subSection) {
+
+    }
+
     /**
      * Saves a report in MySQL database or in flat file (reports.yml).
      */
@@ -149,7 +153,7 @@ public class ReportsManager {
             }
 
         } else {
-            FileConfiguration reportsConf = settingsManager.getReportsConf();
+            FileConfiguration reportsConf = settingsManager.getConf("sections.yml");
             String path = "reports-list." + reportTicket.getId();
             reportsConf.set(path + ".reporter", reportTicket.getReporter().getName());
             reportsConf.set(path + ".reported", reportTicket.getReported().getName());

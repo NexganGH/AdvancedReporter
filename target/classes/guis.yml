@@ -1,0 +1,25 @@
+guis:
+  sections:
+    title: '&eReason for &7%player'
+    size: 9
+    items: {}
+  sub-sections:
+    title: '&eSub reason for &7%player &e| &7%section'
+    size: 9
+    items: {}
+  manager:
+    title: 'Manager GUI'
+    size: 18
+    items:
+      close:
+        index: 17
+        action: 'close_gui:default'
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 1963
+          type: BARRIER
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '&cClose GUI'
+            lore: []

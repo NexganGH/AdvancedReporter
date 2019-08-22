@@ -28,13 +28,22 @@ public class PlayerDataManager {
 	 */
 	public PlayerData getPlayerDataByName(String name) {
 		for(PlayerData pa : playerDatas)
-			if(pa.getPlayer().getName().equalsIgnoreCase(name))
+			if(pa.getPlayer() != null && pa.getPlayer().getName().equalsIgnoreCase(name))
 				return pa;
 		return createNewPlayerData(name);
 	}
 
-	public PlayerData createNewPlayerData(String name) {
-		if (name == null || name.equalsIgnoreCase("none") || name.equalsIgnoreCase("null"))
+	public PlayerData getPlayerDataByPlayer(Player player) {
+		for(PlayerData pa : playerDatas)
+			if(pa.getPlayer() != null && pa.getPlayer() == player)
+				return pa;
+		PlayerData pa = createNewPlayerData(player.getName());
+
+		return pa;
+	}
+
+	private PlayerData createNewPlayerData(String name) {
+		if ( name == null || name.equalsIgnoreCase("none") || name.equalsIgnoreCase("null"))
             return null;
 		Player player = Bukkit.getPlayer(name);
 		boolean online = false;
@@ -49,7 +58,9 @@ public class PlayerDataManager {
 			hasEverJoinedServer = true;
 		}
 
-		return new PlayerData(name, player, online, hasEverJoinedServer);
+		PlayerData pa = new PlayerData(name, player, online, hasEverJoinedServer);
+		playerDatas.add(pa);
+		return pa;
 	}
 
 

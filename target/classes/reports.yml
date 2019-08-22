@@ -1,0 +1,12 @@
+reports-list:
+  '0':
+    reporter: Nexgan
+    reported: Leonen
+    server-name: lobby
+    section: hacks
+    sub-section: killaura
+    reason: 'I do not know'
+    manager: none
+    pending: true
+    accepted: false
+    howResolved: none
